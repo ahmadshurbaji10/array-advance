@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 1
+    let array1 = [1, 7, 9, 45];
+let array2 = ["Str", "alex", "moh"];
+let array3 = ['the', 'fox', 'over', 'lazy', 'dog'];
+     -->
+<!-- 2
+var fruits = ["Tomato", "Banana", "Watermelon"];
+
+var tomatoIndex = fruits.indexOf("Tomato");  
+var bananaIndex = fruits.indexOf("Banana");  
+
+console.log("Index of Tomato:", tomatoIndex);  
+console.log("Index of Banana:", bananaIndex);  --> 
+<!-- 3
+let favoriteFood = ["Pizza", "Sushi", "Pasta", "Burger", "Ice Cream"];
+
+let favoriteSport = ["Football", "Basketball", "Tennis"];
+
+let favoriteMovie = ["Inception", "The Dark Knight", "Interstellar", "The Matrix"];
+
+console.log("Favorite Food:", favoriteFood.length);
+console.log("Favorite Sport:", favoriteSport.length);
+console.log("Favorite Movie:", favoriteMovie.length); -->
+<!-- 4
+function firstOfArray(arr) {
+    return arr[0];  
+}
+
+console.log(firstOfArray([1, 4, 5]));  
+console.log(firstOfArray(["t", "u", "g", "x"]));  -->
+<!-- 5
+function lastOfArray(arr) {
+    return arr[arr.length - 1]; 
+}
+
+console.log(lastOfArray([1, 4, 5]));  
+console.log(lastOfArray(["t", "u", "g", "x"]));   -->
+<!-- 6
+var array = [0, 5, 7, 9];
+
+array.shift(); 
+
+array.unshift(1);
+
+array.push(3, 4, 6, 8); 
+
+array.push(10);
+
+console.log(array);  -->
+<!-- 7
+var array2 = [5, 9, -7, 3.5];
+console.log( array2);
+
+var newLength = array2.push(10);
+console.log( array2);
+console.log( newLength);  -->
+
+
+<!---->
+<!-- 8
+function middleOfArray(arr) {
+    let length = arr.length;
+    let middleIndex = Math.floor(length / 2);  
+
+    if (length % 2 === 1) {
+        return arr[middleIndex];
+    } else {
+        return arr[middleIndex - 1] + " and " + arr[middleIndex];
+    }
+}
+
+console.log(middleOfArray([1, 4, 5]));  
+console.log(middleOfArray(["t", "u", "g", "x"]));   -->
+<!-- 9
+var animals = ['cat', 'ele', 'bird'];
+animals[0] = 'zebra'; 
+animals[1] = 'elephant';  
+console.log(animals);  
+
+var nums = [1, 2, 3, 8, 9];
+nums[0] = 5;  
+nums[1] = -22;  
+nums[2] = 3.5;  
+nums[3] = 44;  
+nums[4] = 98;  
+nums.push(44);  
+console.log(nums);   -->
+<!-- 10
+function indexOfArray(arr, index) {
+    return arr[index];  
+}
+var nums = [1, 2, 3, 8, 9];
+console.log(indexOfArray(nums, 3));  
+console.log(indexOfArray(nums, 1));  
+console.log(indexOfArray(nums, 4));  
+console.log(indexOfArray(nums, 0));  
+console.log(indexOfArray(nums, 2));   
+console.log(indexOfArray(nums, 5));  
+console.log(indexOfArray(nums, -1));  -->
+<!-- 11
+function arrayExceptLast(arr) {
+    return arr.slice(0, arr.length - 1);  
+}
+var nums = [1, 2, 3, 8, 9];
+console.log(arrayExceptLast(nums));  
+console.log(arrayExceptLast([10, 20, 30,20,15]));  
+console.log(arrayExceptLast(["apple", "banana", "cherry", "date"]));  
+console.log(arrayExceptLast([5, 8, 3, 6, 7]));   -->
+<!-- 12
+function addToEnd(arr, a) {
+    arr.push(a);  
+    return arr;      
+}
+
+var nums = [1, 2, 3, 8, 9];
+console.log(addToEnd(nums, 55)); -->
+<!-- 13
+function sumArrayWhile(arr) {
+    let sum = 0;  
+    let i = 0;  
+    while (i < arr.length) {
+        sum += arr[i];  
+        i++;  
+    }
+    return sum; 
+}
+var nums = [1, 2, 3, 8,9];
+console.log(sumArrayWhile(nums));    -->
+<!-- 14
+function minInArrayFor(arr) {
+    let min = arr[0];  
+    for (let i = 1; i < arr.length; i++) { 
+        if (arr[i] < min) {  
+            min = arr[i];  
+        }
+    }
+    return min;  
+}
+var nums = [1, 2, 3, 8, 9];
+console.log(minInArrayFor(nums));  
+<!-- 15
+function removeFromArrayFor(arr, element) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === element) {  
+            arr.splice(i, 1);  
+            break;  
+        }
+    }
+    return arr;  
+}
+var nums = [1, 2, 3, 8, 9];
+console.log(removeFromArrayFor(nums, 1));  -->
+<!-- 16
+function oddArrayFor(arr) {
+    let result = [];  
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {  
+            result.push(arr[i]);  
+        }
+    }
+    return result;  
+}
+var nums = [1, 2, 3, 8, 9];
+console.log(oddArrayFor(nums));   -->
+<!-- 17
+function aveArrayFor(arr) {
+    let sum = 0;  
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];  
+    }
+    return sum / arr.length;  
+}
+var nums = [1, 2, 3, 8, 9];
+console.log(aveArrayFor(nums));  
+var nums2 = [1, 2, 3, 8, 9, 77];
+console.log(aveArrayFor(nums2));   -->
+<!-- 18
+function shorterInArrayFor(arr) {
+    let shortest = arr[0];  
+    for (let i = 1; i < arr.length; i++) {  
+        if (arr[i].length < shortest.length) {  
+            shortest = arr[i];  
+        }
+    }
+    return shortest; 
+}
+var strings = ["ahmaad", "ahmad", "mohammad", "saad", "emad", "hala"];
+console.log(shorterInArrayFor(strings));  -->
+<!-- 19
+function repeatCharFor(str, char) {
+    let count = 0;  
+    for (let i = 0; i < str.length; i++) {  
+        if (str[i] === char) { 
+            count++;  
+        }
+    }
+    return count;  
+}
+var string = "ahmad mohmmad muneer shurbaji emad hala";
+console.log(repeatCharFor(string, "a"));  
+console.log(repeatCharFor(string, "u"));   -->
+<!-- 20
+function evenIndexOddLength(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (i % 2 === 0 && arr[i].length % 2 !== 0) {
+        result.push(arr[i]);
+      }
+    }
+    return result;
+  }
+  
+  var strings = ["alex", "mercer", "madrasa", "rashed2", "emad", "hala"];
+  console.log(evenIndexOddLength(strings));  -->
+  <!-- 21
+  function powerElementIndex(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      result.push(Math.pow(arr[i], i));
+    }
+    return result;
+  }
+  
+  var nums = [44, 5, 4, 3, 2, 10];
+  console.log(powerElementIndex(nums)); -->
+  <!-- 22
+  function evenNumberEvenIndex(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (i % 2 === 0 && arr[i] % 2 === 0) {
+        result.push(arr[i]);
+      }
+    }
+    return result;
+  }
+  var nums = [5, 2, 2, 1, 8, 66, 55, 77, 34, 9, 55, 1];
+  console.log(evenNumberEvenIndex(nums));  -->
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
